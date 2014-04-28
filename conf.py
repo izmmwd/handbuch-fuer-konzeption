@@ -196,8 +196,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'HandbuchfuerKonzeption.tex', u'Handbuch fuer Konzeption Documentation',
-   u'Guenther Leyherr', 'manual'),
+  ('index', 'handbuch-fuer-konzeption.tex', u'Handbuch für Konzeption',
+   u'Günter Leyherr', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
