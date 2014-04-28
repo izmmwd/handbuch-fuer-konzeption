@@ -28,7 +28,7 @@ import os
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = []
+extensions = ['rst2pdf.pdfbuilder']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -44,7 +44,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Handbuch für Konzeption'
-copyright = u'Günther Leyherr'
+copyright = u'Günter Leyherr'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -226,8 +226,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'handbuchfuerkonzeption', u'Handbuch fuer Konzeption Documentation',
-     [u'Guenther Leyherr'], 1)
+    ('index', 'handbuch-fuer-konzeption', u'Handbuch für Konzeption',
+     [u'Günter Leyherr'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -240,8 +240,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'HandbuchfuerKonzeption', u'Handbuch fuer Konzeption Documentation',
-   u'Guenther Leyherr', 'HandbuchfuerKonzeption', 'One line description of project.',
+  ('index', 'handbuch-fuer-konzeption', u'Handbuch für Konzeption',
+   u'Günter Leyherr', 'Handbuch für Konzeption', 'Handbuch für Konzeption',
    'Miscellaneous'),
 ]
 
@@ -256,3 +256,12 @@ texinfo_documents = [
 
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
+
+# -- Options for pdf output
+
+pdf_documents = [('index', u'handbuch-fuer-konzeption', u'Handbuch für Konzeption', u'Günter Leyherr'),]
+   
+# index - master document
+# sample - name of the generated pdf
+# Sample rst2pdf doc - title of the pdf
+# Your Name - author name in the pdf
